@@ -2,10 +2,10 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  webpack: config => {
-    config.resolve.fallback = { fs: false, module: false, path: false }
-    return config
+  webpack: (config) => {
+    config.resolve.fallback = { fs: false, module: false, path: false };
+    return config;
   },
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

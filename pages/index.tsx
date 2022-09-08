@@ -1,10 +1,8 @@
-import type { NextPage } from 'next'
-import HomeTemplate from 'components/templates/index/index.component'
+import HomeTemplate from 'components/templates/index/index.component';
+import type { NextPage } from 'next';
 
 const Home: NextPage = () => {
-  return (
-     <HomeTemplate />
-  )
-}
+  return <HomeTemplate />;
+};
 
-export default Home
+export default Home;
