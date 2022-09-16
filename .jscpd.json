@@ -1,0 +1,14 @@
+{
+  "threshold": 0,
+  "reporters": ["html", "console"],
+  "ignore": [
+    "**/node_modules/**",
+    "**/.next/**",
+    "**/.vscode/**",
+    "**/.github/**",
+    "**/.gitignore",
+    "**/.eslint.json",
+    "**/.cspell.json"
+  ],
+  "absolute": true
+}
