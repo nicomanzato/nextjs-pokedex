@@ -108,10 +108,6 @@ describe('Pokemon List Element', () => {
   });
 
   describe('Description', () => {
-    beforeEach(() => {
-      jest.clearAllMocks();
-    });
-
     test('displays a loading state', async () => {
       global.fetch = jest.fn().mockReturnValue(
         new Promise((resolve) => {

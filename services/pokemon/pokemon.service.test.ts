@@ -97,6 +97,7 @@ describe('Pokemon Service', () => {
           flavor_text_entries: [{ flavor_text: 'a description' }],
         }),
       });
+
       const result = await fetchPokemonDescription('aPokemon');
       expect(result).toEqual('a description');
     });

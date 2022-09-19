@@ -19,9 +19,9 @@ xdescribe('usePokemonDescription', () => {
       ).result;
     });
 
-    await waitFor(() => {
-      expect(result.current.props.children).toEqual('loading...');
-    });
+    const data = result.current.props.children;
+
+    await waitFor(() => expect(data).toEqual('loading...'));
   });
 
   test('returns an error state', async () => {
@@ -35,9 +35,11 @@ xdescribe('usePokemonDescription', () => {
       ).result;
     });
 
-    await waitFor(() => {
-      expect(result.current.props.children).toBe('failed to load');
-    });
+    const data = result.current.props.children;
+
+    await waitFor(() => data !== 'loading...');
+
+    await waitFor(() => expect(data).toBe('failed to load'));
   });
 
   test('returns a value', async () => {
@@ -57,8 +59,6 @@ xdescribe('usePokemonDescription', () => {
 
     await waitFor(() => data !== 'loading...');
 
-    await waitFor(() => {
-      expect(data).toEqual('description');
-    });
+    await waitFor(() => expect(data).toEqual('description'));
   });
 });
