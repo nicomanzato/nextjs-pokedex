@@ -16,7 +16,9 @@
     "prepare": "husky install",
     "test": "jest --detectOpenHandles",
     "test:coverage": "jest --coverage",
-    "check-types": "tsc"
+    "check-types": "tsc",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "@hookform/resolvers": "^2.9.8",
@@ -32,7 +34,17 @@
     "yup": "^0.32.11"
   },
   "devDependencies": {
+    "@babel/core": "^7.19.1",
     "@next/bundle-analyzer": "^12.3.0",
+    "@storybook/addon-actions": "^6.5.12",
+    "@storybook/addon-essentials": "^6.5.12",
+    "@storybook/addon-interactions": "^6.5.12",
+    "@storybook/addon-links": "^6.5.12",
+    "@storybook/addon-postcss": "^2.0.0",
+    "@storybook/builder-webpack5": "^6.5.12",
+    "@storybook/manager-webpack5": "^6.5.12",
+    "@storybook/react": "^6.5.12",
+    "@storybook/testing-library": "^0.0.13",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/react-hooks": "^8.0.1",
@@ -42,7 +54,9 @@
     "@types/react-dom": "18.0.6",
     "@types/styled-components": "^5.1.26",
     "@typescript-eslint/eslint-plugin": "^5.37.0",
+    "babel-loader": "^8.2.5",
     "babel-plugin-macros": "^3.1.0",
+    "babel-plugin-module-resolver": "^4.1.0",
     "eslint": "^8.23.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-base": "^15.0.0",
@@ -56,6 +70,7 @@
     "eslint-plugin-react": "^7.31.7",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-simple-import-sort": "^8.0.0",
+    "eslint-plugin-storybook": "^0.6.4",
     "eslint-plugin-tailwindcss": "^3.6.1",
     "eslint-plugin-unused-imports": "^2.0.0",
     "husky": "^8.0.0",
@@ -64,7 +79,10 @@
     "jest-environment-jsdom": "^29.0.3",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
+    "storybook-addon-next": "^1.6.9",
+    "storybook-addon-next-router": "^4.0.0",
     "tailwindcss": "^3.1.8",
+    "tsconfig-paths-webpack-plugin": "^4.0.0",
     "typescript": "4.8.2"
   },
   "lint-staged": {

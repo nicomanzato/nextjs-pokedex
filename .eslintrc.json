@@ -54,6 +54,7 @@
         "@typescript-eslint/no-unused-vars": "off",
         "unused-imports/no-unused-imports": "error",
         "class-methods-use-this": "off",
+        "import/no-extraneous-dependencies": "off",
         "unused-imports/no-unused-vars": [
           "error",
           { "argsIgnorePattern": "^_" }
